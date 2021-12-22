@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container, h1{
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 70%;
+}
+h1, h2, h3, .label, input, select,
+.product-name, .discount, .price, 
+.quantity p, .shipp, .totall,
+.shipp-cost, .total-cost{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+}
+h1{
+    font-size: 36px;
+    color: #4E5150;
+}
+h2, h3{
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+.product-name{
+    font-size: 16px;
+    color: #4E5150;
+}
+.discount{
+    font-size: 16px;
+    color: #F2994A;
+    transform: rotate(-0.02deg);
+}
+.price{
+    font-size: 12px;
+    text-decoration-line: line-through;
+    color: #4E5150;
+    transform: rotate(-0.02deg);
+}
+.quantity p{
+    font-size: 16px;
+    color: #333333;
+}
+.shipp, .totall{
+    font-size: 18px;
+    color: #333333;
+}
+.shipp-cost, .total-cost{  
+    font-size: 14px;
+    color: #333333;
+}
+.label{
+    font-size: 12px;
+    color: #4F4F4F;
+    margin-bottom: .5rem;
+}
+input, i, select{
+    font-size: 16px;
+    color: #828282;
+}
+.product, .desc, .quantity, 
+.prod-container, .shipping, .total{
+    display: flex;
+}
+.card{
+    padding: 2rem;
+    border: 1px solid black;
+    width: 350px;
+    background: #F2F2F2;
+    border-radius: 12px;
+    float: right;
+}
+.product{
+    padding: 1rem 0;
+}
+.desc p{
+    margin-right: 1rem;
+}
+.prod-container{
+    width: 50%;
+    flex-direction: column;
+    margin: 0 1rem;
+    justify-content: space-between;
+}
+.quantity{
+    margin-top: 2.5rem;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #828282;
+    border-radius: 12px;
+}
+img{
+    width: 40%;
+    border-radius: 15px;
+}
+.shipping{
+    margin-top: 4rem;
+}
+.shipping, .total{
+    padding: .8rem 0;
+    justify-content: space-between;
+    border-top: 1px solid #BDBDBD;;
+}
+.form-section{
+    margin-bottom: 1rem;
+}
+.form-list{
+    position: relative;
+    width: 50%;
+}
+.address{
+    margin-top: 2rem;
+}
+.country{
+    display: flex;
+    justify-content: space-between;
+}
+.country .form-section{
+    width: 45%;   
+}
+.input{
+    display: flex;
+    padding: 1rem;
+    border: 1px solid #828282;
+    border-radius: 12px;
+}
+input[type=text], select{
+    margin-left: 1rem;
+    border: none;
+    width: 100%;
+}
+input[type=checkbox]{
+    border: 1px solid #828282;
+    border-radius: 4px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.checkbox .label{
+    margin: 0;    
+}
+.checkbox{
+    margin-bottom: 4rem;
+}
+.quantity input[type=button]{
+    border: none;
+    background: #E0E0E0;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+}
+.address input[type=button]{
+    color: #FFF;
+    border: none;
+    font-size: 16px;
+    background: #F2994A;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    float: right;
+}
+.author{
+    margin-top: 5rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+select{
+    appearance: none;
+    
+}
+.select {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.select::after {
+    content: "";
+    width: 1em;
+    height: 0.6em;
+    background-color:gray;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+@media(min-width: 1920px){
+    .container, h1{
+        width: 60%;
+    } 
+}
+@media(max-width: 1439px){
+    .container, h1{
+        width: 80%;
+    }
+    @media(max-width: 1024px){
+        .card{
+            float: none;
+            align-self: center;
+            margin-bottom: 3rem;
+        }
+        .container{            
+            display: flex;
+            flex-direction: column;
+        }
+        .container, h1{
+            padding: 2rem 0;
+        }
+        .form-list{
+            width: 100%;
+        }
+        @media(max-width: 640px){
+            .container{
+                width: 92%;
+            }
+            .container, h1{
+                padding: 2rem 0 0;
+            }
+            .card{
+                width: auto;
+            }
+            .input{
+                padding: .5rem;
+            }            
+            .country .form-section{
+                width: 47.5%;   
+            }            
+            h1{
+                font-size: 24px;
+            }
+            h2, h3{
+                font-size: 14px;
+            }
+            .product-name{
+                font-size: 12px;
+            }
+            .discount{
+                font-size: 12px;
+            }
+            .price{
+                font-size: 10px;
+            }
+            .shipp, .totall{
+                font-size: 14px;
+            }
+            .label{
+                font-size: 10px;
+            }
+            input, i, select{
+                font-size: 12px;
+            }
+        }
+    }
+}
